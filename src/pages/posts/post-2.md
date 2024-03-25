@@ -12,4 +12,5 @@ tags: ["astro", "bloguear", "aprender en público", "éxitos"]
 <a href="/">Index</a>
 <a href="/about/">About</a>
 <a href="/blog/">Blog</a>
-Después de una exitosa primera semana aprendiendo Astro, decidí probar un poco más. Escribí e importé un pequeño componente de memoria.
+
+<p>Después de una exitosa primera semana aprendiendo Astro, decidí probar un poco más. Escribí e importé un pequeño componente de memoria.</p>
