@@ -9,8 +9,8 @@ image:
 tags: ["astro", "bloguear", "aprender en público"]
 ---
 
-<a href="/">Blog</a>
-<a href="/about/">Blog Practice</a>
+<a href="/">Index</a>
+<a href="/about/">About</a>
 <a href="/blog/">Blog</a>
 
 # Mi primera publicación en el blog

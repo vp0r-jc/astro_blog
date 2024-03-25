@@ -9,7 +9,7 @@ pubDate: 2022-07-08
 tags: ["astro", "bloguear", "aprender en público", "éxitos"]
 ---
 
-<a href="/">Blog</a>
-<a href="/about/">Blog Practice</a>
+<a href="/">Index</a>
+<a href="/about/">About</a>
 <a href="/blog/">Blog</a>
 Después de una exitosa primera semana aprendiendo Astro, decidí probar un poco más. Escribí e importé un pequeño componente de memoria.
