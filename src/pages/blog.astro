@@ -1,5 +1,8 @@
 ---
 const pageTitle ="Blog"
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+
 ---
 
 <html lang="en">
@@ -9,11 +12,15 @@ const pageTitle ="Blog"
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+    <style>
+        h1 {
+          color: purple;
+          font-size: 4rem;
+        }
+    </style>
   </head>
   <body>
-    <a href="/">Index</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+  <Navigation/>
 
     <h1>{pageTitle}</h1>
     <h2>aqui va pura locura</h2>
