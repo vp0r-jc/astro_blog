@@ -1,5 +1,25 @@
 ---
 const pageTitle = "About";
+
+const identity = {
+  firstName: "JC Buger",
+  country: "Mexa",
+  occupation: "3D Developer",
+  hobbies: ["fotografia", "musica", "high roller club"],
+};
+
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Astro",
+  "Redacción de documentos",
+];
+
+const skillColor = "blue";
+const fontWeight = "bold"
+const textTransform = "textCase"
 ---
 
 <html lang="en">
@@ -9,6 +29,18 @@ const pageTitle = "About";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+    <style define:vars={{skillColor, fontWeight, textTransform}}>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+
+      .skill {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textTransform);
+      }
+    </style>
   </head>
   <body>
     <a href="/">Index</a>
@@ -26,5 +58,23 @@ const pageTitle = "About";
       Este sitio se irá actualizando a medida que vaya completando más partes
       del tutorial, ¡así que no dejes de visitarlo para ver cómo va mi viaje!
     </p>
+
+    <p>He aquí algunos datos sobre mí:</p>
+    <ul>
+      <li>Me llamo {identity.firstName}.</li>
+      <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
+      {
+        identity.hobbies.length >= 2 && (
+          <li>
+            Dos de mis aficiones son: {identity.hobbies[0]} y{" "}
+            {identity.hobbies[1]}
+          </li>
+        )
+      }
+    </ul>
+    <p>Mis habilidades son:</p>
+    <ul>
+      {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
   </body>
 </html>
