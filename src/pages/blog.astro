@@ -1,7 +1,8 @@
 ---
 const pageTitle ="Blog"
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+
+import Header from '../components/Header.astro';
 
 ---
 
@@ -20,7 +21,7 @@ import Navigation from '../components/Navigation.astro';
     </style>
   </head>
   <body>
-  <Navigation/>
+  <Header/>
 
     <h1>{pageTitle}</h1>
     <h2>aqui va pura locura</h2>
@@ -34,5 +35,8 @@ import Navigation from '../components/Navigation.astro';
       <li><a href="/posts/post-2/">Publicación 2</a></li>
       <li><a href="/posts/post-3/">Publicación 3</a></li>
     </ul>
+    <script>
+		import "../scripts/menu.js";
+	</script>
   </body>
 </html>

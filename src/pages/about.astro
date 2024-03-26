@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 
 const pageTitle = "About";
 
@@ -46,7 +46,7 @@ const textTransform = "textCase"
     </style>
   </head>
   <body>
-    <Navigation/>
+    <Header/>
     <h1>{pageTitle}</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
 
@@ -77,5 +77,8 @@ const textTransform = "textCase"
     <ul>
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
+    <script>
+		import "../scripts/menu.js";
+	</script>
   </body>
 </html>
